@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+
+    "name": "Chroudao",
+    "description": "Chrome OS 有道词典",
+    "version": "1.0",
+
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+       "128": "icon128.png"
+    },
+
+    "permissions": [
+        "http://dict.youdao.com/"
+        ],
+    "browser_action": {
+        "default_icon": "icon450.png",
+        "default_popup": "dict.html"
+    }
+}
