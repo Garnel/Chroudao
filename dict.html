@@ -1,100 +1,19 @@
 <!doctype html>
 <html>
     <head>
-        <title>Getting Started Extension's Popup</title>
-        <style>
-            body {
-                min-width: 500px;
-                overflow-x: hidden;
-            }
-
-            table {
-                width: 500px;
-            }
-
-            td {
-                padding: 0px 4px;
-            }
-
-            input {
-                color:#333;
-                line-height:normal;
-                font-family:"Microsoft YaHei",Tahoma,Verdana,SimSun;
-                font-style:normal;
-                font-variant:normal;
-                font-size-adjust:none;
-                font-stretch:normal;
-                font-weight:normal;
-                margin: 0px;
-                padding: 4px 0px;
-                font-size:15px;
-                width: 100%;
-
-                outline-width:medium;
-                outline-style:none;
-                outline-color:invert;
-                text-shadow:0px 1px 2px #fff;
-                background-attachment:scroll;
-                background-repeat:repeat-x;
-                background-position-x:left;
-                background-position-y:top;
-                background-size:auto;
-                background-origin:padding-box;
-                background-clip:border-box;
-                background-color:rgb(255,255,255);
-                border-top-color:#ccc;
-                border-right-color:#ccc;
-                border-bottom-color:#ccc;
-                border-left-color:#ccc;
-                border-top-width:1px;
-                border-right-width:1px;
-                border-bottom-width:1px;
-                border-left-width:1px;
-                border-top-style:solid;
-                border-right-style:solid;
-                border-bottom-style:solid;
-                border-left-style:solid;
-            }
-
-            input:focus {
-                border: 1px solid #fafafa;
-                -webkit-box-shadow: 0px 0px 6px #007eff;
-                box-shadow: 0px 0px 5px #007eff;   
-            }
-
-            button {
-                font-size: 15px;
-                border: 0;
-                width: 100%;
-                margin: 0 auto;
-                padding-top: 6px;
-                padding-bottom: 6px;
-            }
-
-            button:focus {
-                outline: -webkit-focus-ring-color auto 5px;
-            }
-        </style>
-
-        <!--
-        - JavaScript and HTML must be in separate files: see our Content Security
-        - Policy documentation[1] for details and explanation.
-        -
-        - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
-        -->
-        <script src="jquery.min.js"></script>
+        <title>Chroudao</title>
+        <link rel="stylesheet" href="dict.css">
+        <link rel="stylesheet" href="result-min.css">
         <script src="dict.js"></script>
     </head>
     <body>
-        <table>
-            <tr>
-                <td width="80%"><div class="header-cell"><input type="text" name="keyword-box" id="keyword"/></div></td>
-                <td width="20%"><div class="header-cell"><button type="button" id="search">查询</button></div></td>
-            </tr>
-            <tr>
-                <td  ColSpan=2><div id="content"></div></td>
-            </tr>
-        </table>
+        <div id="header">
+            <div class="title" id="keyword-box"><input type="text" name="keyword-box" id="keyword"/></div>
+            <div class="title" id="search-box"><button type="button" id="search">查询</button></div>
+            <div style="clear:both;"></div>
+        </div>
+        <div id="content">
+        </div>
     </body>
 </html>
 

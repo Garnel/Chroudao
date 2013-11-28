@@ -4,7 +4,8 @@
     "name": "Chroudao",
     "description": "Chrome OS 有道词典",
     "version": "1.0",
-
+    "minimum_chrome_version": "24.0.1307.0",
+    
     "icons": {
         "16": "icon16.png",
         "48": "icon48.png",
@@ -12,10 +13,13 @@
     },
 
     "permissions": [
-        "http://dict.youdao.com/"
-        ],
-    "browser_action": {
-        "default_icon": "icon450.png",
-        "default_popup": "dict.html"
+        "http://dict.youdao.com/",
+        "http://shared.ydstatic.com/"
+    ],
+    
+    "app": {
+        "background": {
+            "scripts": ["main.js"]
+        }
     }
 }
