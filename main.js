@@ -30,6 +30,6 @@ function runApp() {
       'height': 500
     },
     minWidth: 710,
-    minHeight: 500
+    minHeight: 550
   });
 }
