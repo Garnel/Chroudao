@@ -27,7 +27,7 @@ function runApp() {
     id: "dictWinID",
     bounds: {
       'width': 710,
-      'height': 500
+      'height': 550
     },
     minWidth: 710,
     minHeight: 550
