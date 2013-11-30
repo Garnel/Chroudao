@@ -10,28 +10,26 @@ var dictLoader = {
             var content = document.getElementById('content');
             content.style.visibility = 'hidden';
             content.innerHTML = xhr.responseText;
-            var result = document.getElementById('results');
-            content.innerHTML = "";
-            content.appendChild(result);
-            content.style.visibility = 'visible';
+            
+            var toremove = document.querySelectorAll('body script, body link,.img-list,img,.pronounce a, .more');
+            for (var i = 0; i < toremove.length; ++i) {
+                toremove[i].parentNode.removeChild(toremove[i]);
+            }
+            
+            var todisplay = document.querySelectorAll('#phrsListTab, #tEETrans, #authDictTrans, #collinsResult');
 
-            var tabs = document.querySelectorAll('.tabs a');
-            for (var i in tabs) {
-                var tab = tabs[i];
-                console.log(tab);
-                var cur = tab.parentNode.getElementsByClassName('tab-current');
-                tab.onclick = function(){
-                    if (cur.length > 1) {
-                        cur = cur[0];
-                        cur.className.replace('tab-current', '');
-                        var currel = cur.getAttribute('rel').slice(1);
-                        document.getElementById(currel).style.display = "none";
-                    }
-                    var rel = tab.getAttribute('rel').slice(1);
-                    tab.className += ' tab-current';
-                    document.getEle(rel).style.display = "block";
-                }
-            };
+            content.innerHTML = "";
+            
+            for (var i = 0; i < todisplay.length; ++i) {
+                todisplay[i].style.display = "block";
+                content.appendChild(todisplay[i]);
+                
+                if (i < todisplay.length - 1)
+                    content.appendChild(document.createElement('hr'));
+            }
+            content.style.visibility = 'visible';
+            
+            var more = document.querySelectorAll(".more");
         }
     },
 

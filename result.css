@@ -1,0 +1,438 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-family: Arial,sans-serif;
+    color: #434343;
+    line-height: 24px;
+}
+
+h1,h2,h3,h4,h5,p,ul,form,li,ol,div,dl,dt,dd {
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol,li {
+    list-style: none;
+}
+
+a:link,a:visited {
+    color: #35a1d4;
+    outline: 0;
+}
+
+b {
+    font-weight: normal;
+    color: #638c0b;
+}
+
+.additional {
+    color: #959595;
+}
+
+#phrsListTab {
+    margin-top: 0;
+    overflow: hidden;
+}
+
+#phrsListTab .phonetic {
+    font-size: 14px;
+}
+
+#phrsListTab .trans-container {
+    margin: 1em 0 2em 0;
+    color: #000;
+}
+
+#phrsListTab h2 {
+    line-height: 30px;
+    font-size: 24px;
+    margin-bottom: 5px;
+    overflow: hidden;
+    zoom: 1;
+    word-break: break-all;
+}
+
+.keyword {
+    margin-right: 1px;
+}
+
+#phrsListTab .trans-container li {
+    font-weight: bold;
+    color: #434343;
+}
+
+.pos {
+    margin-right: .1em;
+}
+
+.def {
+    margin-left: .1em;
+}
+
+.trans-wrapper {
+    position: relative;
+    zoom: 1;
+}
+
+.trans-container {
+    margin: .9em 0 1.8em;
+}
+
+.trans-container p,.trans-container li {
+    line-height: 24px;
+}
+
+.trans-container .ol {
+    margin: 8px 15px 0 20px;
+    margin-left: 33px\9;
+}
+
+.trans-container .ul {
+    margin: 8px 15px 18px 0;
+}
+
+.trans-container .ol li {
+    list-style: decimal;
+    margin: 0 0 .7em 0;
+}
+
+.trans-container .ul li {
+    margin: 0 0 1em 0;
+}
+
+.ar {
+    color: #a0a0a0;
+    font-size: 12px;
+}
+
+p.via,span.via {
+    color: #959595;
+}
+
+.phonetic,.field,.origin,.complexfont {
+    font-weight: normal;
+    color: #666;
+    margin: 0 .1em;
+}
+
+.phonetic {
+    color: #a0a0a0;
+    font-family: "lucida sans unicode",arial,sans-serif;
+}
+
+.wordGroup .contentTitle {
+    font-weight: bold;
+    color: #35a1d4;
+    margin-right: .5em;
+}
+
+.wt-collapse .collapse-content {
+    display: none;
+}
+
+.pr-container .title,.wt-container .title {
+    font-weight: bold;
+    position: relative;
+}
+
+.wt-container .title span {
+    zoom: 1;
+    vertical-align: middle;
+}
+
+.trans-container div .do-detail {
+    background-position: -194px -74px;
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+}
+
+.trans-container div .do-detail:hover {
+    background-position: -219px -74px;
+}
+
+.wt-collapse div .do-detail {
+    background-position: 0 -74px;
+}
+
+.wt-collapse div .do-detail:hover {
+    background-position: -17px -74px;
+}
+
+.wt-container a {
+    outline: 0;
+}
+
+#tEETrans p.additional {
+    margin: 5px 0;
+    text-indent: 14px;
+}
+
+#tEETrans .ol p em,.gray {
+    color: #a0a0a0;
+}
+
+.wordTrans {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-position: -183px -237px;
+    cursor: pointer;
+}
+
+.wordTrans a {
+    color: #2779b6;
+}
+
+.errorTip {
+    height: 18px;
+    line-height: 18px;
+    font-weight: normal;
+}
+
+#transDevotion form p {
+    margin: 8px 0;
+    line-height: 1.5em;
+}
+
+#transDevotion form label {
+    margin: 0 .83em 0 0;
+}
+
+#transDevotion form .center {
+    margin: 0 6px 0 0;
+}
+
+.trans-container textarea.trans-content,.trans-container input.trans-message {
+    vertical-align: middle;
+    font-size: 12px;
+    font-weight: normal;
+    width: 220px;
+}
+
+.trans-container textarea.trans-content {
+    height: 70px;
+    resize: none;
+}
+
+#transDevotion form .submitTip {
+    margin-left: 70px;
+}
+
+#transDevotion .error-message {
+    margin: 0 0 -5px 72px;
+    display: block;
+}
+
+.trans-container .ensure,.trans-container a.ensure:hover {
+    display: inline-block;
+    width: 61px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.trans-container .ensure {
+    background-position: -61px -237px;
+}
+
+.trans-container .ensure:hover {
+    background-position: 0 -237px;
+}
+
+.trans-container .ensure:active {
+    background-position: -122px -237px;
+}
+
+.trans-container .cancel,.trans-container .cancel:hover {
+    display: inline-block;
+    width: 61px;
+    height: 24px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.trans-container .cancel {
+    background-position: -61px -261px;
+}
+
+.trans-container .cancel:hover {
+    background-position: 0 -261px;
+}
+
+.trans-container .cancel:active {
+    background-position: -122px -261px;
+}
+
+.trans-container .alignCenter span {
+    display: none;
+}
+
+.collins .wordGroup {
+    color: #35a1d4;
+    margin-bottom: 6px;
+}
+
+.collins .wordGroup .contentTitle {
+    color: #a0a0a0;
+    font-weight: normal;
+}
+
+.collins .more {
+    float: right;
+    margin: -23px 0;
+    width: auto;
+}
+
+.wt-container .trans-tip {
+    font-weight: normal;
+    color: #9d9d9d;
+}
+
+.wt-container .trans-content {
+    font-weight: normal;
+}
+
+.wt-container .collins-intro {
+    border: 1px solid #cdcdcd;
+    padding: 6px 0 6px 5px;
+    color: #959595;
+}
+
+.trans-content ol {
+    padding-left: 23px;
+}
+
+.trans-content .pattern,.trans-content .spell {
+    font-weight: normal;
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.collins-phonetic {
+    font-family: "lucida sans unicode",arial,sans-serif;
+}
+
+.trans-content .pattern {
+    margin-left: 15px;
+}
+
+.trans-content .title,.trans-content .rank {
+    font-size: 14px;
+    color: #313131;
+    font-weight: bold;
+}
+
+.trans-content .rank {
+    margin-left: 10px;
+}
+
+.trans-content .trans {
+    margin-left: 10px;
+    color: #313131;
+}
+
+#collins .additional span {
+    display: inline-block;
+    margin-left: -1.83em;
+}
+
+#collins .additional p {
+    padding-left: 1.83em;
+}
+
+#collinsResult .ol {
+    margin: 8px 0 0 0;
+}
+
+#collinsResult .ol li {
+    list-style: none;
+}
+
+#collinsResult .ol .collinsMajorTrans {
+    background: #eff5f8;
+    padding: 5px 5px 5px 25px;
+}
+
+#collinsResult .collinsOrder {
+    float: left;
+    margin-left: -15px;
+}
+
+#collinsResult .exampleLists {
+    margin: 15px 0 15px 40px;
+    color: #626262;
+}
+
+.collinsMajorTrans .additional {
+    color: #626262;
+}
+
+#collinsResult .examples {
+    padding-left: 15px;
+}
+
+#collinsResult b {
+    font-weight: bold;
+}
+
+.collinsToggle h4 .title {
+    color: #eb6100;
+}
+
+.star {
+    margin-left: 10px;
+    background-position: -225px -112px;
+    _background-position: -225px -110px;
+    height: 14px;
+    vertical-align: middle;
+}
+
+.star3 {
+    width: 37px;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+#examples_sentences,#examples_sentences .trans-container {
+    margin-top: 0;
+}
+
+#examples_sentences .ol {
+    margin-top: 25px;
+}
+
+.baav {
+    margin-top: 3px;
+}
+
+.keyword {
+    vertical-align: bottom;
+    margin-right: 15px;
+}
+
+.pronounce {
+    margin-right: 30px;
+    font-size: 14px;
+    color: #666;
+    display: inline-block;
+    line-height: 26px;
+}
+
+.pronounce .phonetic {
+    margin-left: .2em;
+}
+
+.phonetic {
+    font-family: "lucida sans unicode",arial,sans-serif;
+}

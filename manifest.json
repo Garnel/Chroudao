@@ -14,7 +14,9 @@
 
     "permissions": [
         "http://dict.youdao.com/",
-        "http://shared.ydstatic.com/"
+        "http://shared.ydstatic.com/",
+        {"fileSystem": ["write", "retainEntries", "directory"]},
+        "storage"
     ],
     
     "app": {
